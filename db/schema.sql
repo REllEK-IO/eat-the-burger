@@ -9,3 +9,9 @@ create table burgers(
     `date` DATETIME not null,
     primary key(`id`)
 );
+
+create database todolist;
+
+use todolist;
+
+select * from todos;

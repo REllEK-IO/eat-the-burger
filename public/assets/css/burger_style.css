@@ -1,66 +1,87 @@
-h3{
+h3 {
     font-size: 18px;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: 'Audiowide', cursive !important;
 }
 
-body{
+body {
     background-color: silver;
     font-family: 'Roboto', sans-serif;
-    color: #42246d;
+    color: #e2c8c8;
+    background: url("../img/burgerjoint.jpg");
+    background-size: cover;
 }
 
-textarea{
+textarea {
     width: 100%;
     min-height: 125px;
     border-bottom-right-radius: 50px;
-    box-shadow: inset -10px -10px 25px #ddd;
+    box-shadow: inset -10px -10px 25px #3a4d45;
     outline: none;
     padding: 10px;
+    color: #e2c8c8;
+    background-color: rgba(0, 137, 104, 0.36);
+    border-color: #4e3d3d;
 }
 
-.col-centered{
+.col-centered {
     margin: 0 auto;
 }
 
-.right{
-    float: right;  
+.right {
+    float: right;
 }
 
-.main{
+.main {
     margin-top: 80px;
     background-color: #8defd0;
-    border: 3px groove #42246d;
+    border: 3px groove #e2c8c8;
     border-radius: 15px;
-    box-shadow: inset 0px 0px 120px white;
+    box-shadow: inset 0px 0px 120px #4d4141;
+    background-color: rgba(24, 26, 29, 0.96);
+    border-top-left-radius: 90px;
 }
 
-.btn-primary{
-    background-color: #42246d;
+.btn-primary {
+    background-color: #3bc8a9;
+    border-color: #4e3d3d;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Audiowide', cursive !important;
 }
 
-.clearfix{
-    clear:both;
+.btn-primary:hover {
+    background-color: #14453b;
+    color: silver;
+    border-color: silver;
 }
 
-#title{
+.clearfix {
+    clear: both;
+}
+
+#title {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #dccaca;
 }
 
-#form{
-    width:400px;
+#form {
+    width: 400px;
     margin: 0 auto;
     padding-bottom: 20px;
     border-bottom-right-radius: 50px;
 }
 
-#burger-main{
+#burger-main {
     width: 200px;
     height: auto;
     margin: 0 auto;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
