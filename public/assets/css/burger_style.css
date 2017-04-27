@@ -1,0 +1,66 @@
+h3{
+    font-size: 18px;
+}
+
+h1,h2,h3{
+    font-family: 'Audiowide', cursive !important;
+}
+
+body{
+    background-color: silver;
+    font-family: 'Roboto', sans-serif;
+    color: #42246d;
+}
+
+textarea{
+    width: 100%;
+    min-height: 125px;
+    border-bottom-right-radius: 50px;
+    box-shadow: inset -10px -10px 25px #ddd;
+    outline: none;
+    padding: 10px;
+}
+
+.col-centered{
+    margin: 0 auto;
+}
+
+.right{
+    float: right;  
+}
+
+.main{
+    margin-top: 80px;
+    background-color: #8defd0;
+    border: 3px groove #42246d;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 120px white;
+}
+
+.btn-primary{
+    background-color: #42246d;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#form{
+    width:400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 50px;
+}
+
+#burger-main{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display:block;
+    margin:auto;
+}
