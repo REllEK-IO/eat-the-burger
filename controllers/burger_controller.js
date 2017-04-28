@@ -1,16 +1,38 @@
 var express = require("express");
+var connection = require("./config/connections");
+
+var databaseConnected = false;
+
+connection.on("error", function(){
+    databaseConnected = false;
+    console.log("Database connection closed.");
+});
 
 var router = express.Router();
 
 var burger = require("../models/burger");
 
 router.get("/", function(req, res) {
-  burger.all(function(data){
-      var hbsObject = {
-          burgers : data
-      }
-      res.render("index", hbsObject);
-  })
+    if(databaseConnected){
+        burger.all(function(data){
+            var hbsObject = {
+                burgers : data
+            }
+            res.render("index", hbsObject);
+        })
+    }
+    else{
+        connection.connect(function(){
+            console.log("Reconnected to database");
+            databaseConnected = true;
+            burger.all(function(data){
+                var hbsObject = {
+                    burgers : data
+                }
+                res.render("index", hbsObject);
+            })
+        })
+    }
 });
 
 router.post("/api/new", function(req, res){

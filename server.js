@@ -1,6 +1,14 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+var connection = require("./config/connections");
+
+var databaseConnected = false;
+
+connection.on("error", function(){
+    databaseConnected = false;
+    console.log("Database connection closed.");
+})
 
 var app = express();
 const PORT = process.env.PORT || 8080;
