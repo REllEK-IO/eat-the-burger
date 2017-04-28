@@ -15,4 +15,9 @@ connection.connect(function(err) {
     console.log("Connected as id: " + connection.threadId);
 });
 
+connection.on('error', function() {
+    connection.connect();
+    console.log("+==============================+ MYSQL lost connection!!!");
+});
+
 module.exports = connection;
